@@ -1,0 +1,53 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  part_number: MyString
+  item_number: MyString
+  quantity: 1
+  description: MyString
+  frame_size: MyString
+  seal_size: MyString
+  seal_type: MyString
+  frame_option: MyString
+  pump_size: MyString
+  case_steam_jkt: MyString
+  twell_bearing_hsg: MyString
+  fastener_matl: MyString
+  shaft_duty: MyString
+  shaft_matl: MyString
+  isolator_option: MyString
+  ball_qty: MyString
+  matl_of_const: MyString
+  oring_matl: MyString
+  stat_seal_matl: MyString
+  lip_seal_matl: MyString
+  exp_groove: MyString
+  exp_size: MyString
+  lip_seal_hi_press: MyString
+  seal_hsg_stm_jkt: MyString
+
+two:
+  part_number: MyString
+  item_number: MyString
+  quantity: 1
+  description: MyString
+  frame_size: MyString
+  seal_size: MyString
+  seal_type: MyString
+  frame_option: MyString
+  pump_size: MyString
+  case_steam_jkt: MyString
+  twell_bearing_hsg: MyString
+  fastener_matl: MyString
+  shaft_duty: MyString
+  shaft_matl: MyString
+  isolator_option: MyString
+  ball_qty: MyString
+  matl_of_const: MyString
+  oring_matl: MyString
+  stat_seal_matl: MyString
+  lip_seal_matl: MyString
+  exp_groove: MyString
+  exp_size: MyString
+  lip_seal_hi_press: MyString
+  seal_hsg_stm_jkt: MyString

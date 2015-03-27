@@ -1,0 +1,71 @@
+<h1>Configured BOM</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Part number</th>
+      <th>Item number</th>
+      <th>Quantity</th>
+      <th>Description</th>
+ <!--     <th>Frame size</th>
+      <th>Seal size</th>
+      <th>Seal type</th>
+      <th>Frame option</th>
+      <th>Pump size</th>
+      <th>Case steam jkt</th>
+      <th>Twell bearing hsg</th>
+      <th>Fastener matl</th>
+      <th>Shaft duty</th>
+      <th>Shaft matl</th>
+      <th>Isolator option</th>
+      <th>Ball qty</th>
+      <th>Matl of const</th>
+      <th>Oring matl</th>
+      <th>Stat seal matl</th>
+      <th>Lip seal matl</th>
+      <th>Exp groove</th>
+      <th>Exp size</th>
+      <th>Lip seal hi press</th>
+      <th>Seal hsg stm jkt</th> -->
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @a9s.each do |a9| %>
+      <tr>
+        <td><%= a9.part_number %></td>
+        <td><%= a9.item_number %></td>
+        <td><%= a9.quantity %></td>
+        <td><%= a9.description %></td>
+<!--        <td><%= a9.frame_size %></td>
+        <td><%= a9.seal_size %></td>
+        <td><%= a9.seal_type %></td>
+        <td><%= a9.frame_option %></td>
+        <td><%= a9.pump_size %></td>
+        <td><%= a9.case_steam_jkt %></td>
+        <td><%= a9.twell_bearing_hsg %></td>
+        <td><%= a9.fastener_matl %></td>
+        <td><%= a9.shaft_duty %></td>
+        <td><%= a9.shaft_matl %></td>
+        <td><%= a9.isolator_option %></td>
+        <td><%= a9.ball_qty %></td>
+        <td><%= a9.matl_of_const %></td>
+        <td><%= a9.oring_matl %></td>
+        <td><%= a9.stat_seal_matl %></td>
+        <td><%= a9.lip_seal_matl %></td>
+        <td><%= a9.exp_groove %></td>
+        <td><%= a9.exp_size %></td>
+        <td><%= a9.lip_seal_hi_press %></td>
+        <td><%= a9.seal_hsg_stm_jkt %></td> -->
+        <td><%= link_to 'Show', a9 %></td>
+        <td><%= link_to 'Edit', edit_a9_path(a9) %></td>
+        <td><%= link_to 'Destroy', a9, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New A9', new_a9_path %>

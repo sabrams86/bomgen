@@ -1,0 +1,10 @@
+<h3>BOM Configurator</h3>
+<%= form_for :a9s, :url => { :controller => "a9s", :action => "process_a9" }, :html => {method: :get, class: "form-inline"} do |f| %>
+  <div class="field">
+    <%= f.label :intellicode %><br />
+    <%= f.text_field :code %>
+  </div>
+   <div class="actions">
+    <%= f.submit "Generate BOM" %>
+  </div>
+<% end %>

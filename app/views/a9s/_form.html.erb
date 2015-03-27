@@ -1,0 +1,113 @@
+<%= form_for(@a9) do |f| %>
+  <% if @a9.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@a9.errors.count, "error") %> prohibited this a9 from being saved:</h2>
+
+      <ul>
+      <% @a9.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :part_number %><br>
+    <%= f.text_field :part_number %>
+  </div>
+  <div class="field">
+    <%= f.label :item_number %><br>
+    <%= f.text_field :item_number %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br>
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :frame_size %><br>
+    <%= f.text_field :frame_size %>
+  </div>
+  <div class="field">
+    <%= f.label :seal_size %><br>
+    <%= f.text_field :seal_size %>
+  </div>
+  <div class="field">
+    <%= f.label :seal_type %><br>
+    <%= f.text_field :seal_type %>
+  </div>
+  <div class="field">
+    <%= f.label :frame_option %><br>
+    <%= f.text_field :frame_option %>
+  </div>
+  <div class="field">
+    <%= f.label :pump_size %><br>
+    <%= f.text_field :pump_size %>
+  </div>
+  <div class="field">
+    <%= f.label :case_steam_jkt %><br>
+    <%= f.text_field :case_steam_jkt %>
+  </div>
+  <div class="field">
+    <%= f.label :twell_bearing_hsg %><br>
+    <%= f.text_field :twell_bearing_hsg %>
+  </div>
+  <div class="field">
+    <%= f.label :fastener_matl %><br>
+    <%= f.text_field :fastener_matl %>
+  </div>
+  <div class="field">
+    <%= f.label :shaft_duty %><br>
+    <%= f.text_field :shaft_duty %>
+  </div>
+  <div class="field">
+    <%= f.label :shaft_matl %><br>
+    <%= f.text_field :shaft_matl %>
+  </div>
+  <div class="field">
+    <%= f.label :isolator_option %><br>
+    <%= f.text_field :isolator_option %>
+  </div>
+  <div class="field">
+    <%= f.label :ball_qty %><br>
+    <%= f.text_field :ball_qty %>
+  </div>
+  <div class="field">
+    <%= f.label :matl_of_const %><br>
+    <%= f.text_field :matl_of_const %>
+  </div>
+  <div class="field">
+    <%= f.label :oring_matl %><br>
+    <%= f.text_field :oring_matl %>
+  </div>
+  <div class="field">
+    <%= f.label :stat_seal_matl %><br>
+    <%= f.text_field :stat_seal_matl %>
+  </div>
+  <div class="field">
+    <%= f.label :lip_seal_matl %><br>
+    <%= f.text_field :lip_seal_matl %>
+  </div>
+  <div class="field">
+    <%= f.label :exp_groove %><br>
+    <%= f.text_field :exp_groove %>
+  </div>
+  <div class="field">
+    <%= f.label :exp_size %><br>
+    <%= f.text_field :exp_size %>
+  </div>
+  <div class="field">
+    <%= f.label :lip_seal_hi_press %><br>
+    <%= f.text_field :lip_seal_hi_press %>
+  </div>
+  <div class="field">
+    <%= f.label :seal_hsg_stm_jkt %><br>
+    <%= f.text_field :seal_hsg_stm_jkt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
